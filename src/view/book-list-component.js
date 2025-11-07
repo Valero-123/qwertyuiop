@@ -5,7 +5,7 @@ import {createElement} from '../framework/render.js';
 function createBookListTemplate() {
     return (
         `<div>
-            <h2>Книги</h2>
+            <h2>Привычки</h2>
             <ul id="book-list">
             
             </ul>
@@ -24,4 +24,5 @@ export default class BookListComponent extends AbstractComponent{
   get template(){
         return createBookListTemplate();
   }
+
 }
