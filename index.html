@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Книжка полка</title>
+    <title>Привычки</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Моя книжная полка</h1>
+        <h1>Мои привычки</h1>
         <div class="book-form">
 
         </div>
-        <button class = "trigger" type="submit">Добавить книгу</button>
+        <button class = "trigger" type="submit">Добавить привычку</button>
         <div class="book-filter">
 
         </div>
@@ -26,14 +26,13 @@
             <form class="popup">
                 <p class="close-popup">x</p>
             <h2>Изменить книгу</h2>
-                <input type="text" id="book-title-edit" placeholder="Название книги" required />
+                <input type="text" id="book-title-edit" placeholder="Название привычки" required />
                 <input type="text" id="book-author-edit" placeholder="Автор" required />
                 <select id="book-genre-edit" required>
-                    <option value="">Выбрать жанр</option>
-                    <option value="Fiction">Художественная</option>
-                    <option value="Science">Научная</option>
-                    <option value="Fantasy">Фантастика</option>
-                    <option value="Biography">Биография</option>
+                    <option value="">Отметить как</option>
+                    <option value="Fiction">Выполнено</option>
+                    <option value="Science">Не выполнено</option>
+
                 </select>
                 <button id = "save-book-button-edit" type="button" >Сохранить</button>
             </form>
