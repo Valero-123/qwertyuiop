@@ -10,10 +10,8 @@ function createAddBookComponentTemplate() {
                 <input type="text" id="book-author" placeholder="Автор" required />
                 <select id="book-genre" required>
                     <option value="">Выбрать жанр</option>
-                    <option value="Fiction">Художественная</option>
-                    <option value="Science">Научная</option>
-                    <option value="Fantasy">Фантастика</option>
-                    <option value="Biography">Биография</option>
+                    <option value="Fiction">Выполнено</option>
+                    <option value="Science">Не выполнено</option>
                 </select>
                 <button class = "add-book-button" type="submit">Добавить книгу</button>
             </form>`
@@ -37,4 +35,5 @@ export default class AddBookComponent extends AbstractComponent{
     evt.preventDefault();
     this.#handleClick();
   };
+
 }
