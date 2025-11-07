@@ -8,10 +8,9 @@ function createFilterBooksTemplate() {
         <h2>Фильтровать</h2>
             <select id="genre-filter">
                 <option value="all">Все</option>
-                <option value="Fiction">Художественная</option>
-                <option value="Science">Научная</option>
-                <option value="Fantasy">Фантастика</option>
-                <option value="Biography">Биография</option>
+                <option value="Fiction">Выполнено</option>
+                <option value="Science">Не выполнено</option>
+
             </select>
         </div>
 `
@@ -35,5 +34,6 @@ export default class FilterBooksComponent extends AbstractComponent{
     evt.preventDefault();
     this.#handleClick();
   };
+
 
 }
