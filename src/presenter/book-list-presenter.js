@@ -39,7 +39,7 @@ export default class BookListPresenter{
         const bookitle = document.getElementById('book-title-edit').value.trim();
         const bookAuthor = document.getElementById('book-author-edit').value.trim();
         const bookGenre = document.getElementById('book-genre-edit').value.trim();
-        if(!bookitle && !bookAuthor && (bookGenre != "Выбрать жанр")){
+        if(!bookitle && !bookAuthor && (bookGenre != "Выбрать привычку")){
             return;
         }
         this.#booksModel.editBook(bookitle, bookAuthor, bookGenre, task.id);
@@ -136,3 +136,4 @@ export default class BookListPresenter{
     }
 
 }
+
